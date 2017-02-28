@@ -1,0 +1,96 @@
+$red-darken:#d50000;
+$red-lighten: #e57373;
+$light-white:#f5f5f5;
+$font-color-black:#212121;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Nunito+Sans');
+@import "variable.scss";
+
+*{
+     box-sizing: border-box;
+}
+
+.nav-wrapper{
+     .ribbon{
+          width:60px;
+          height:60px;
+          cursor: pointer;
+     }
+     h1{
+          font-size:40px;
+          position: absolute;
+          top:-20px;
+          left: 55px;
+          font-family: 'Raleway', sans-serif;
+          span{
+               color:$red-darken;
+          }
+     }
+}
+
+.big-image{
+     width:100%;
+     height:600px;
+     background-color:#fff;
+}
+
+.about{
+     background-color: #f57c00 ;
+     p{
+          font-size:18px;
+          color:white;
+          font-family: 'Nunito Sans';
+     }
+     h3{
+          margin-top: 0px;
+          padding-top: 26px;
+     }
+}
+
+.about{
+     position: relative;
+     height:400px;
+}
+.infection{
+     height:400px;
+     background-color:#757575 ;
+}
+h3{
+     margin-top:0px;
+     padding-top: 26px;
+}
+h2{
+     color:$font-color-black;
+     font-family: 'Open Sans', sans-serif;
+}
+
+h5{
+     margin-top:20px;
+     padding:20px;
+}
+
+.distribution{
+     background-color:#fff;
+     .row{
+          box-shadow: 10px 2px 2px #e0e0e0;
+          .chart{
+               min-width: 400px;
+               height: 400px;
+               margin: 10px auto;
+          }
+     }
+     .third{
+          box-shadow: none;
+     }
+}
+
+.minimized{
+     height:400px;
+     background:#26a69a ;
+}
+
+
+ @media #{$medium-and-large}{
+     .row .col.l4{
+          width: 50%;
+     }
+}

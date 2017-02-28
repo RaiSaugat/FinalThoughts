@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Nunito+Sans");
+* {
+		box-sizing: border-box; }
+
+.nav-wrapper .ribbon {
+		width: 60px;
+		height: 60px;
+		cursor: pointer; }
+
+.nav-wrapper h1 {
+		font-size: 40px;
+		position: absolute;
+		top: -20px;
+		left: 55px;
+		font-family: 'Raleway', sans-serif; }
+		.nav-wrapper h1 span {
+				color: #d50000; }
+
+.big-image {
+		width: 100%;
+		height: 600px;
+		background-color: #fff; }
+
+.about {
+		background-color: #f57c00; }
+		.about p {
+				font-size: 18px;
+				color: white;
+				font-family: 'Nunito Sans'; }
+		.about h3 {
+				margin-top: 0px;
+				padding-top: 26px; }
+
+.about {
+		position: relative;
+		height: 400px; }
+
+.infection {
+		height: 400px;
+		background-color: #757575; }
+
+h3 {
+		margin-top: 0px;
+		padding-top: 26px; }
+
+h2 {
+		color: #212121;
+		font-family: 'Open Sans', sans-serif; }
+
+h5 {
+		margin-top: 20px;
+		padding: 20px; }
+
+.distribution {
+		background-color: #fff; }
+		.distribution .row {
+				box-shadow: 10px 2px 2px #e0e0e0; }
+				.distribution .row .chart {
+						min-width: 400px;
+						height: 400px;
+						margin: 10px auto; }
+		.distribution .third {
+				box-shadow: none; }
+
+.minimized {
+		height: 400px;
+		background: #26a69a; }
+
+@media only screen and (min-width: 981px) and (max-width: 1225px) {
+		.row .col.l4 {
+				width: 50%; } }
