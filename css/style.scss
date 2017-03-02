@@ -8,48 +8,97 @@ $font-color-black:#212121;
 *{
      box-sizing: border-box;
 }
-
+nav{
+     position: relative;
+}
+nav .nav-wrapper{
+     position: relative;
+     height: 0%;
+}
 .nav-wrapper{
+     position: fixed;
      .ribbon{
           width:60px;
           height:60px;
           cursor: pointer;
      }
-     h1{
-          font-size:40px;
-          position: absolute;
-          top:-20px;
-          left: 55px;
-          font-family: 'Raleway', sans-serif;
-          span{
-               color:$red-darken;
+     .logo-name{
+          font-size: 37px;
+          font-family: 'Raleway';
+     }
+     .v{
+          color:$red-darken;
+     }
+}
+
+#sidenav-overlay{
+     z-index: 0;
+}
+
+.fa-usd{
+     height:20px;
+     margin-top: -50px;
+}
+
+.collapsible-body{
+     p{
+          text-align: justify;
+          color:white;
+          font-size: 14px;
+     }
+     ul li{
+          list-style: disc;
+          color: white;
+     }
+}
+
+.hospital-list{
+     .container{
+          .row{
+               padding: 50px;
+               border-bottom: 1px solid #ccc;
+          }
+          h4{
+               color: $red-lighten;
           }
      }
 }
-
 .big-image{
      width:100%;
-     height:600px;
-     background-color:#fff;
-}
-
-.about{
-     background-color: #f57c00 ;
-     p{
-          font-size:18px;
-          color:white;
-          font-family: 'Nunito Sans';
+     height:610px;
+     background-image: url("../images/bg.png");
+     background-size: cover;
+     background-repeat: no-repeat;
+     position: relative;
+     h3{
+          position: absolute;
+          top:50%;
+          left: 30%;
      }
+}
+#test1{
+     p{
+          font-size: 14px;
+     }
+}
+.about{
+      background-color: #BD4343 ;
+     position: relative;
+     .container{
+          .tabs{
+               background: #BD4343;
+               a{
+                    color: #fff;
+               }
+          }
      h3{
           margin-top: 0px;
           padding-top: 26px;
      }
+ }
 }
 
-.about{
-     position: relative;
-     height:400px;
-}
+
 .infection{
      height:400px;
      background-color:#757575 ;
@@ -70,27 +119,83 @@ h5{
 
 .distribution{
      background-color:#fff;
-     .row{
-          box-shadow: 10px 2px 2px #e0e0e0;
-          .chart{
-               min-width: 400px;
-               height: 400px;
-               margin: 10px auto;
+     .active{
+          color: $red-darken;
+     }
+     i{
+          cursor: pointer;
+          p{
+               font-size: 18px;
+               color: $font-color-black;
+               font-style: 'Raleway';
           }
      }
      .third{
           box-shadow: none;
      }
 }
-
+.chart{
+     min-width: 400px;
+     height: 400px;
+     margin: 10px auto;
+     opacity: 0.8;
+     &:hover{
+          opacity: 1;
+          transform:scale(1.01);
+     }
+}
+.section{
+     cursor: pointer;
+}
 .minimized{
-     height:400px;
      background:#26a69a ;
 }
 
+.forum-data{
+     margin-top:50px;
+     border-radius: 5px;
+     padding: 50px;
+     margin-bottom: 50px;
+     p{
+          color: #000;
+          font-size: 14px;
+     }
+     span{
+          color: red;
+     }
+}
 
+.our-info{
+     margin-top: 50px;
+     padding: 20px;
+}
+
+.footer{
+     height:300px;
+     position: relative;
+     background:#BD4343;
+     h4{
+          color: #fff;
+     }
+     .copyright{
+          position: absolute;
+          bottom: 0;
+     }
+}
  @media #{$medium-and-large}{
      .row .col.l4{
           width: 50%;
+     }
+     .row .col.m4{
+          width:33.33%;
+     }
+}
+
+@media #{$small-and-down}{
+     span{
+          display: none;
+     }
+     .forum-data form{
+          margin-left: 20%;
      }
 }

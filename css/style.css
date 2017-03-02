@@ -2,38 +2,73 @@
 * {
 		box-sizing: border-box; }
 
-.nav-wrapper .ribbon {
-		width: 60px;
-		height: 60px;
-		cursor: pointer; }
+nav {
+		position: relative; }
 
-.nav-wrapper h1 {
-		font-size: 40px;
-		position: absolute;
-		top: -20px;
-		left: 55px;
-		font-family: 'Raleway', sans-serif; }
-		.nav-wrapper h1 span {
+nav .nav-wrapper {
+		position: relative;
+		height: 0%; }
+
+.nav-wrapper {
+		position: fixed; }
+		.nav-wrapper .ribbon {
+				width: 60px;
+				height: 60px;
+				cursor: pointer; }
+		.nav-wrapper .logo-name {
+				font-size: 37px;
+				font-family: 'Raleway'; }
+		.nav-wrapper .v {
 				color: #d50000; }
+
+#sidenav-overlay {
+		z-index: 0; }
+
+.fa-usd {
+		height: 20px;
+		margin-top: -50px; }
+
+.collapsible-body p {
+		text-align: justify;
+		color: white;
+		font-size: 14px; }
+
+.collapsible-body ul li {
+		list-style: disc;
+		color: white; }
+
+.hospital-list .container .row {
+		padding: 50px;
+		border-bottom: 1px solid #ccc; }
+
+.hospital-list .container h4 {
+		color: #e57373; }
 
 .big-image {
 		width: 100%;
-		height: 600px;
-		background-color: #fff; }
+		height: 610px;
+		background-image: url("../images/bg.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: relative; }
+		.big-image h3 {
+				position: absolute;
+				top: 50%;
+				left: 30%; }
+
+#test1 p {
+		font-size: 14px; }
 
 .about {
-		background-color: #f57c00; }
-		.about p {
-				font-size: 18px;
-				color: white;
-				font-family: 'Nunito Sans'; }
-		.about h3 {
+		background-color: #BD4343;
+		position: relative; }
+		.about .container .tabs {
+				background: #BD4343; }
+				.about .container .tabs a {
+						color: #fff; }
+		.about .container h3 {
 				margin-top: 0px;
 				padding-top: 26px; }
-
-.about {
-		position: relative;
-		height: 400px; }
 
 .infection {
 		height: 400px;
@@ -53,19 +88,65 @@ h5 {
 
 .distribution {
 		background-color: #fff; }
-		.distribution .row {
-				box-shadow: 10px 2px 2px #e0e0e0; }
-				.distribution .row .chart {
-						min-width: 400px;
-						height: 400px;
-						margin: 10px auto; }
+		.distribution .active {
+				color: #d50000; }
+		.distribution i {
+				cursor: pointer; }
+				.distribution i p {
+						font-size: 18px;
+						color: #212121;
+						font-style: 'Raleway'; }
 		.distribution .third {
 				box-shadow: none; }
 
-.minimized {
+.chart {
+		min-width: 400px;
 		height: 400px;
+		margin: 10px auto;
+		opacity: 0.8; }
+		.chart:hover {
+				opacity: 1;
+				transform: scale(1.01); }
+
+.section {
+		cursor: pointer; }
+
+.minimized {
 		background: #26a69a; }
+
+.forum-data {
+		margin-top: 50px;
+		border-radius: 5px;
+		padding: 50px;
+		margin-bottom: 50px; }
+		.forum-data p {
+				color: #000;
+				font-size: 14px; }
+		.forum-data span {
+				color: red; }
+
+.our-info {
+		margin-top: 50px;
+		padding: 20px; }
+
+.footer {
+		height: 300px;
+		position: relative;
+		background: #BD4343; }
+		.footer h4 {
+				color: #fff; }
+		.footer .copyright {
+				position: absolute;
+				bottom: 0; }
 
 @media only screen and (min-width: 981px) and (max-width: 1225px) {
 		.row .col.l4 {
-				width: 50%; } }
+				width: 50%; }
+		.row .col.m4 {
+				width: 33.33%; } }
+
+@media only screen and (max-width: 692px) {
+		span {
+				display: none; }
+		.forum-data form {
+				margin-left: 20%; } }
