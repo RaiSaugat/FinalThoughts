@@ -46,17 +46,10 @@ nav .nav-wrapper {
 		color: #e57373; }
 
 .big-image {
-		width: 100%;
 		height: 610px;
 		background-image: url("../images/background.png");
 		background-size: cover;
-		background-repeat: no-repeat;
-		position: relative; }
-		.big-image h3 {
-				position: absolute;
-				top: 50%;
-				left: 30%;
-				display: none; }
+		background-repeat: no-repeat; }
 
 #test1 p {
 		font-size: 14px; }
