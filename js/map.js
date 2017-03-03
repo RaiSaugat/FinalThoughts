@@ -4,7 +4,9 @@ function initMap() {
      ['Dristi Nepal', 27.721614,85.308924, 4],
      ['Maiti Nepal',27.704128, 85.347244,4],
      ['National Center For AIDS and STD Control',27.695936, 85.305313,4],
-
+     ['National Federation of Women Living with HIV/AIDS ',27.677825,85.303364,4],
+     ['Nepal HIV/AIDS Alliance' ,27.697691,85.329775,4],
+     ['National NGOs Network Group Against AIDS ',27.699419,85.311471,4],
     ];
 
     var map = new google.maps.Map(document.getElementById('map'), {

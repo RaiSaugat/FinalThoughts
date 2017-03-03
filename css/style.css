@@ -3,7 +3,8 @@
 		box-sizing: border-box; }
 
 nav {
-		position: relative; }
+		position: relative;
+		background: #562C36; }
 
 nav .nav-wrapper {
 		position: relative;
@@ -47,28 +48,37 @@ nav .nav-wrapper {
 .big-image {
 		width: 100%;
 		height: 610px;
-		background-image: url("../images/bg.png");
+		background-image: url("../images/background.png");
 		background-size: cover;
 		background-repeat: no-repeat;
 		position: relative; }
 		.big-image h3 {
 				position: absolute;
 				top: 50%;
-				left: 30%; }
+				left: 30%;
+				display: none; }
 
 #test1 p {
 		font-size: 14px; }
 
 .about {
-		background-color: #BD4343;
+		color: #fff;
+		background-color: #282828;
 		position: relative; }
 		.about .container .tabs {
-				background: #BD4343; }
+				background: #282828; }
 				.about .container .tabs a {
-						color: #fff; }
+						color: #fff;
+						font-size: 18px; }
 		.about .container h3 {
 				margin-top: 0px;
 				padding-top: 26px; }
+		.about .collapsible-header {
+				color: #151414; }
+		.about .collapsible-body {
+				background: #F4F4F4; }
+				.about .collapsible-body p {
+						color: #212121; }
 
 .infection {
 		height: 400px;
@@ -87,9 +97,10 @@ h5 {
 		padding: 20px; }
 
 .distribution {
-		background-color: #fff; }
+		background-color: #F7F7F7;
+		margin-top: -20px; }
 		.distribution .active {
-				color: #d50000; }
+				color: #AD0000; }
 		.distribution i {
 				cursor: pointer; }
 				.distribution i p {
@@ -108,11 +119,16 @@ h5 {
 				opacity: 1;
 				transform: scale(1.01); }
 
+.fast-track-info p {
+		text-align: justify;
+		font-size: 18px; }
+
 .section {
 		cursor: pointer; }
 
 .minimized {
-		background: #26a69a; }
+		background: #eeeeee;
+		margin-top: -20px; }
 
 .forum-data {
 		margin-top: 50px;
@@ -125,6 +141,12 @@ h5 {
 		.forum-data span {
 				color: red; }
 
+.hospital-text {
+		padding-bottom: 20px; }
+		.hospital-text img {
+				width: 75px;
+				height: 75px; }
+
 .our-info {
 		margin-top: 50px;
 		padding: 20px; }
@@ -135,14 +157,24 @@ h5 {
 		margin-bottom: 40px; }
 
 .footer {
+		margin-top: -20px;
 		height: 300px;
 		position: relative;
-		background: #BD4343; }
+		background: #4A051C; }
 		.footer h4 {
+				color: #fff; }
+		.footer p {
+				color: #fff; }
+		.footer form {
 				color: #fff; }
 		.footer .copyright {
 				position: absolute;
 				bottom: 0; }
+				.footer .copyright p {
+						color: #fff; }
+		.footer img {
+				width: 50px;
+				height: 50px; }
 
 @media only screen and (min-width: 981px) and (max-width: 1225px) {
 		.row .col.l4 {
