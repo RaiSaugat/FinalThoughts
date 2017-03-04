@@ -164,7 +164,7 @@ $(document).ready(function(){
          $(".gender").addClass("active");
          $(".age").removeClass("active");
          $(".year").removeClass("active");
-            $(".row-all").html("<div class='col l4 col m12'><div class='section'><a  href='#modal1'><div id='chart-gender-data-first' class='z-depth-5 chart'></div></a></div></div><div class='col l4 col m12'><div class='section'><div id='chart-gender-data-second' class='z-depth-5 chart'></div></div></div><div class='col l4 col m12'><div class='section'><div id='chart-gender-data-third' class='z-depth-5 chart'></div></div></div>");
+            $(".row-all").html("<div class='col l4 col m12'><div class='section'><div id='chart-gender-data-first' class='z-depth-5 chart'></div></div></div><div class='col l4 col m12'><div class='section'><div id='chart-gender-data-second' class='z-depth-5 chart'></div></div></div><div class='col l4 col m12'><div class='section'><div id='chart-gender-data-third' class='z-depth-5 chart'></div></div></div>");
         Highcharts.chart('chart-gender-data-first', {
     chart: {
         type: 'column'
@@ -322,7 +322,7 @@ $(document).ready(function(){
          $(".year").addClass("active");
          $(".gender").removeClass("active");
          $(".age").removeClass("active");
-        $(".row-all").html("<div class='col l12 col m12'><div class='section'><div id='chart-year-data-first' class='z-depth-5 chart'></div></div></div><div class='col l4 col m12'><div class='section'><div id='chart-year-data-second' class='z-depth-5 chart'></div></div></div><div class='col l4 col m12'><div class='section'><div id='chart-year-data-third' class='z-depth-5 chart'></div></div></div><div class='col l4 col m12'><div class='section'><div id='chart-year-data-fourth' class='z-depth-5 chart'></div></div></div>");
+        $(".row-all").html("<div class='col l12 col m12'><div class='section'><a href='#model1'><div id='chart-year-data-first' class='z-depth-5 chart'></div></a></div></div><div class='col l4 col m12'><div class='section'><div id='chart-year-data-second' class='z-depth-5 chart'></div></div></div><div class='col l4 col m12'><div class='section'><div id='chart-year-data-third' class='z-depth-5 chart'></div></div></div><div class='col l4 col m12'><div class='section'><div id='chart-year-data-fourth' class='z-depth-5 chart'></div></div></div>");
       Highcharts.chart('chart-year-data-first', {
     title: {
         text: 'Estimated New HIV Infection (1990-2016)'
